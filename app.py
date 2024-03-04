@@ -2,10 +2,10 @@
 
 import streamlit as st
 
-from Language_Utils.language import supported_languages
-from PDF_Utils.pdf import extract_text_from_pdf
-from Language_Utils.translate import translate
-from PDF_Utils.creation import create_pdf
+from language import supported_languages
+from pdf import extract_text_from_pdf
+from translate import translate
+from creation import create_pdf
 
 # Page-Config
 
