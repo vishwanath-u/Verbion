@@ -41,7 +41,6 @@ if uploaded_file is not None:
         st.subheader("Translated Text")
         st.write(translated_text)
 
-    # Create downloadable PDF using BytesIO
     if st.sidebar.button("Download Translated PDF"):
         pdf_data = create_pdf(translated_text)
         st.sidebar.download_button("Download Translated PDF", pdf_data, key="download_btn", file_name="translated_text.pdf")
